@@ -19,9 +19,9 @@ public class DogTypesTest {
     void init() throws SQLException {
         MariaDbDataSource dataSource;
         dataSource = new MariaDbDataSource();
-        dataSource.setUrl("jdbc:mariadb://localhost:3306/employees?useUnicode=true");
-        dataSource.setUser("employees");
-        dataSource.setPassword("employees");
+        dataSource.setUrl("jdbc:mariadb://localhost:3306/dogs?useUnicode=true");
+        dataSource.setUser("dogs");
+        dataSource.setPassword("dogs");
 
         Flyway flyway = Flyway.configure().dataSource(dataSource).load();
 
